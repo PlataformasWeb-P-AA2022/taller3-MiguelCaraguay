@@ -1,0 +1,23 @@
+.uno{
+	background-color: skyblue;
+	height: 40px;
+	border: solid 2px blue;
+}
+
+.mensaje{
+	background-color: #fff;
+	margin: 5px;
+	padding: 6px;
+}
+
+
+.dos{
+	margin-top: 10px;
+	background-color: orange;
+	padding: 10px 5px
+}	
+
+.comentario{
+	border-bottom:solid 2px green; 
+	color: white;
+}
