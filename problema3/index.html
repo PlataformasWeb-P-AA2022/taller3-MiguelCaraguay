@@ -23,9 +23,16 @@
             }).then(function(data) {
               for(var i=0; i<data.length; i++){
                 console.log(data[i]);
-                console.log(data[i]["CLDR display name"]);
-                console.log(data[i].Capital);
-                $('#mensajeFinal').append("<p> <b>Código:</b> "+ data[i].CLDR + " <b>Nombre:</b> " + data[i].Capital + "</p>");
+                $('#mensajeFinal').append("<p> <b>País:</b> "+ 
+                  data[i]["CLDR display name"] +
+                  " <b>Capital:</b> " + data[i].Capital + 
+                  " <b>FIPS PUB 10-4:</b> " + data[i].FIPS +
+                  " <b>Code assigned by FIFA:</b> " + data[i].FIFA + 
+                  " <b>Continet from Geonames:</b> " + data[i].Continent + 
+                  " <b>Languages from Geonames:</b> " + data[i].Languages + 
+                  " <b>Geoname Id:</b> " + data[i].GEONAMES +  
+                  " <b>Distinguishing sings :</b> " + data[i].DS +  
+                  "</p>");
               }
             });      
       });
